@@ -1,0 +1,44 @@
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica,Arial,sans-serif;
+  color: $mainColor;
+}
+//TEXT COLORS
+.text-mainOrange {
+  color: $mainOrange;
+}
+.text-mainBlueGradiant {
+  color: $mainBlueGradiant;
+}
+.text-muted-bt3 {
+  color: #999999;
+}
+.text-gold {
+  color: $gold;
+}
+//BACKGROUND COLORS
+.bg-mainOrange {
+  background-color: $mainOrange;
+}
+.bg-dodgerblue {
+  background-color: dodgerblue;
+}
+.bg-main-blue-gradiant {
+  background-image: $mainBlueGradiant;
+}
+.bg-card-gradiant {
+  background-image: $cardGradiant;
+}
+.bg-gold {
+  background-color: $gold;
+}
+
+//FONTS
+.rem2 {
+  font-size: 2rem;
+}
+//OTHER
+.sticky-bottom {
+  position: sticky;
+  bottom:0;
+  z-index: 1020;
+}

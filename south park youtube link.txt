@@ -1,0 +1,110 @@
+<div class="col-2">
+        <div class="card">
+          <p class="h6 card-header text-uppercase">
+            Cartman's mom
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9cKsq14Kfsw" allowfullscreen></iframe>
+</div>
+          <div class="card-body">
+            <h4 class="card-title">Tytu³ karty</h4>
+            <p class="card-text">Treœæ naszej karty, czyli jakiœ opis czy cokolwiek chcemy w niej zamieœciæ.</p>
+            <div class="row justify-content-around">
+              <div class="btn-group" role="group">
+              <button id="btnDropdown" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vote<span class="ml-2 badge badge-light">4</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnDropdown">
+                <a class="dropdown-item" href="#">1</a>
+                <a class="dropdown-item" href="#">2</a>
+                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="#">4</a>
+              </div>
+            </div>
+            <button href="#" class=" btn btn-danger">Die</button>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-2">
+      <div class="card">
+        <p class="h6 card-header text-uppercase">
+          Something
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i9AT3jjAP0Y" allowfullscreen></iframe>
+</div>
+        <div class="card-body">
+          <h4 class="card-title">Tytu³ karty</h4>
+          <p class="card-text">Treœæ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, neque?</p>
+          <div class="row justify-content-around">
+            <div class="btn-group" role="group">
+            <button id="btnDropdown" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vote<span class="ml-2 badge badge-light">4</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnDropdown">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+              <a class="dropdown-item" href="#">3</a>
+              <a class="dropdown-item" href="#">4</a>
+            </div>
+          </div>
+          <button href="#" class=" btn btn-danger">Die</button>
+        </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-2">
+    <div class="card">
+      <p class="h6 card-header text-uppercase">
+        lorem
+      </p>
+      <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5D5LkyIhwMk" allowfullscreen></iframe>
+</div>
+      <div class="card-body">
+        <h4 class="card-title">Tytu³ karty</h4>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex nisi sint!</p>
+        <div class="row justify-content-around">
+          <div class="btn-group" role="group">
+          <button id="btnDropdown" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vote<span class="ml-2 badge badge-light">4</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnDropdown">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+          </div>
+        </div>
+        <button href="#" class=" btn btn-danger">Die</button>
+      </div>
+      </div>
+    </div>
+</div>
+<div class="col-2">
+  <div class="card">
+    <p class="h6 card-header text-uppercase">
+      Cartman's mom
+    </p>
+    <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Re35RHatAOw" allowfullscreen></iframe>
+</div>
+    <div class="card-body">
+      <h4 class="card-title">Tytu³ karty</h4>
+      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex nisi sint!</p>
+      <div class="row justify-content-around">
+        <div class="btn-group" role="group">
+        <button id="btnDropdown" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vote<span class="ml-2 badge badge-light">4</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnDropdown">
+          <a class="dropdown-item" href="#">1</a>
+          <a class="dropdown-item" href="#">2</a>
+          <a class="dropdown-item" href="#">3</a>
+          <a class="dropdown-item" href="#">4</a>
+        </div>
+      </div>
+      <button href="#" class=" btn btn-danger">Die</button>
+    </div>
+    </div>
+  </div>
+
+
+</div>

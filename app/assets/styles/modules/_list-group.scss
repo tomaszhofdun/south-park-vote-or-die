@@ -1,0 +1,36 @@
+//overide default styles of bootstrap list-group 
+
+.list-group {
+  font-family: 'Annie Use Your Telescope';
+  font-weight: 700;
+  font-size: 1.2rem;
+  a {
+      &:hover {
+          background-color: $mainOrange;
+          color: #fff;
+      }
+  }
+  .dropup {
+    .dropdown-toggle {
+        white-space: normal;
+      &::after {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+//main styles of list-group
+
+.list-group-footer {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1.2rem;
+  a {
+    color: black;
+    &:hover {
+        background-color: transparent;
+        color: black;
+    }
+}
+}

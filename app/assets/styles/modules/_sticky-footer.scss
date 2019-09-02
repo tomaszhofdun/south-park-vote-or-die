@@ -1,0 +1,15 @@
+
+.navbar-nav {
+    .nav-item-bottom {
+    background-color: $primary;
+    transition: .5s;
+    border-right: solid 1px white;
+    &:last-child {
+        border-right: none;
+    }
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+
+    }
+}

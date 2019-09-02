@@ -1,0 +1,55 @@
+@mixin fromSmall {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin fromMedium {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin fromLarge {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin fromXLarge {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @mixin clearBoth {
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  } 
+  
+
+  @mixin toSmall {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @mixin toMedium {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin toLarge {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin toXLarge {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }

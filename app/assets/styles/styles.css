@@ -1,0 +1,19 @@
+@import "base/_variables.scss";
+/* bootstrap scss needs to be import after custom variables so we can 
+overide !default bootstrap variables with flag !default  */
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "base/_mixins.scss";
+@import "base/_global.scss";
+@import "modules/_custom.scss";
+@import "modules/_sprite.scss";
+@import "modules/_navbar.scss";
+@import "modules/_carousel.scss";
+@import "modules/_list-group.scss";
+@import "modules/_parralax.scss";
+@import "modules/_modal-sp-trailer.scss";
+@import "modules/_card.scss";
+@import "modules/_sticky-footer.scss";
+@import "modules/_face-of-south-park.scss";
+
+

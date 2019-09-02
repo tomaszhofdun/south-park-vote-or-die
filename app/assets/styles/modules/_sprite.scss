@@ -1,0 +1,41 @@
+/* Do not edit "modules/_sprite.css" directly as it's automatically generate by gulp-sprite */
+/* Instead edit "gulp/templates/sprite.css" */
+
+.icon {
+    background-image: url("../../assets/images/icons/svg-compiled/sprite-7598c0d5.svg"); 
+}
+.no-svg .icon {
+    background-image: url("../../assets/images/icons/svg-compiled/sprite-7598c0d5.png"); 
+}
+
+.icon--svg--angle-double-up-solid
+    {
+    width: 17px;
+    height: 26px;
+    background-position: 0 0;
+    display: inline-block;
+}
+
+.icon--svg--chart-pie-solid
+    {
+    width: 17px;
+    height: 16px;
+    background-position: 50% 0;
+    display: inline-block;
+}
+
+.icon--svg--envelope-open-solid
+    {
+    width: 17px;
+    height: 17px;
+    background-position: 100% 0;
+    display: inline-block;
+}
+
+.icon--svg--envelope-solid
+    {
+    width: 17px;
+    height: 17px;
+    background-position: 0 100%;
+    display: inline-block;
+}

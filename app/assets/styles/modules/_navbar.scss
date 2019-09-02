@@ -1,0 +1,13 @@
+.navbar-top {
+    border-bottom: 1px solid #345578;
+    .top-navbar  {
+   
+        .navbar-logo {
+            font-size: 1.56rem;
+            @include toSmall {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
