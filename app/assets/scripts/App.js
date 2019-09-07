@@ -11,7 +11,9 @@ import ToolTips from "./modules/_toolTips";
 
 var toolTips = new ToolTips;
 
+import Test from "./modules/test";
 
+var test = new Test;
 // require("./modules/_toolTips")
 // var re = new df();
 // import GallerySlider from "./modules/_gallerySlider";
