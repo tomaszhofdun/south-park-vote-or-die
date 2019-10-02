@@ -14,8 +14,11 @@ var toolTips = new ToolTips;
 import Modals from "./modules/_modals";
 var modals = new Modals;
 
-import Test from "./modules/test";
+import Test from "./modules/_test";
 var test = new Test;
+
+// import Test2 from "./modules/_test2";
+// var test2 = new Test2;
 
 import ScrolltoTop from "./modules/_scrolltoTop";
 var scrolltoTop = new ScrolltoTop;

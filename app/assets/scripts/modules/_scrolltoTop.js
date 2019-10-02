@@ -3,24 +3,19 @@ import smoothscroll from "jquery-smooth-scroll";
 
 class ScrolltoTop {
     constructor() {
-        this.scrollToTopIcon = $(".scroolToTop");
+        this.scrollToTopIcon = $(".scrollToTopIcon");
+        // this.addSmoothScrolling();
         this.events();
     }
     events() {
-        this.scrollToTopIcon.on("click", this.scrollToTop())
+        // this.scrollToTopIcon.on("click", this.scrollToTop())
+        document.addEventListener("DOMContentLoaded", this.addSmoothScrolling());
     }
-    scrollToTop() {
-        this.scrollToTopIcon.smoothscroll({
+    addSmoothScrolling() {
+        this.scrollToTopIcon.smoothScroll({
             offset: 0,
-           
-            // easing name. jQuery comes with "swing" and "linear." For others, you'll need an easing plugin
-            // from jQuery UI or elsewhere
             easing: 'swing',
-           
-            // speed can be a number or 'auto'
-            // if 'auto', the speed will be calculated based on the formula:
-            // (current scroll position - target scroll position) / autoCoefficient
-            speed: 400,
+            speed: "auto",
             preventDefault: true
            
           })
