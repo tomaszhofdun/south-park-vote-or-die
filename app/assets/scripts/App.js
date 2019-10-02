@@ -3,17 +3,23 @@
 import "popper.js";
 import "bootstrap";
 import "../../temp/scripts/modernizr";
-import "picturefill";
 import "lazysizes";
+// import "picturefill";
+// require("./modules/_modals");
 
 
 import ToolTips from "./modules/_toolTips";
-
 var toolTips = new ToolTips;
 
-import Test from "./modules/test";
+import Modals from "./modules/_modals";
+var modals = new Modals;
 
+import Test from "./modules/test";
 var test = new Test;
+
+import ScrolltoTop from "./modules/_scrolltoTop";
+var scrolltoTop = new ScrolltoTop;
+
 // require("./modules/_toolTips")
 // var re = new df();
 // import GallerySlider from "./modules/_gallerySlider";

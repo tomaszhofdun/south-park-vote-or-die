@@ -1,16 +1,16 @@
-// import $ from "jquery";
+import $ from "jquery";
 
 
-// class Test {
-//     constructor() {
-//         this.events()
-//     }
-//     events() {
-//        console.log("ds");
-//        $(".ds").css("color", "red");
-// }
-// }
+class Test {
+    constructor() {
+        this.events()
+    }
+    events() {
+    //    console.log("ds");
+    //    $(".ds").css("color", "red");
+}
+}
 
 
-//   export default Test;
+  export default Test;
 

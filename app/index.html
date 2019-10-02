@@ -69,8 +69,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h1 class="display-4 text-mainOrange text-uppercase font-weight-bolder mb-3">NEW GAME - NEW QUALITY™</h1>
               <h3 class="text-mainOrange mb-4">Huge fan of South Park ? Must see !!!</h3>
-              <button type="button" class="btn btn-lg btn-warning mr-1 shadow" data-toggle="modal" data-target="#southparkgameplay">Watch First Gameplay</button>
-              <button type="button" class="btn btn-lg btn-success ml-1 shadow" data-toggle="modal" data-target="#southparktrailer">Watch Trailer</button>
+              <button type="button" class="btn btn-lg btn-warning mr-1 shadow" data-toggle="modal" data-target="#southparkgameplaymodal">Watch First Gameplay</button>
+              <button type="button" class="btn btn-lg btn-success ml-1 shadow" data-toggle="modal" data-target="#southparktrailermodal">Watch Trailer</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -178,9 +178,15 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="btnDropdown">
                               <a class="dropdown-item" href="#">1</a>
-                              <a class="dropdown-item" href="#">2</a>
-                              <a class="dropdown-item" href="#">3</a>
-                              <a class="dropdown-item" href="#">4</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                                <a class="dropdown-item" href="#">4</a>
+                                <a class="dropdown-item" href="#">5</a>
+                                <a class="dropdown-item" href="#">6</a>
+                                <a class="dropdown-item" href="#">7</a>
+                                <a class="dropdown-item" href="#">8</a>
+                                <a class="dropdown-item" href="#">9</a>
+                                <a class="dropdown-item" href="#">10</a>
                             </div>
                           </div>
                         </div>
@@ -222,6 +228,12 @@
                                 <a class="dropdown-item" href="#">2</a>
                                 <a class="dropdown-item" href="#">3</a>
                                 <a class="dropdown-item" href="#">4</a>
+                                <a class="dropdown-item" href="#">5</a>
+                                <a class="dropdown-item" href="#">6</a>
+                                <a class="dropdown-item" href="#">7</a>
+                                <a class="dropdown-item" href="#">8</a>
+                                <a class="dropdown-item" href="#">9</a>
+                                <a class="dropdown-item" href="#">10</a>
                               </div>
                             </div>
                           </div>
@@ -377,7 +389,7 @@
               <a class="nav-link" href="#"><span class="icon icon--svg--chart-pie-solid align-middle"></span></a>
             </li>
             <li class="nav-item nav-item-bottom px-sm-5 px-3">
-              <a class="nav-link" href="#"><span class="icon icon--svg--angle-double-up-solid align-middle"></span></a>
+              <a class="nav-link scrollToTop" href="#navbar-top"><span class="icon icon--svg--angle-double-up-solid align-middle"></span></a>
             </li>
           </ul>
         </nav>
@@ -422,7 +434,6 @@
         <!-- costam -->
         <!-- costam -->
         <!-- costam -->
-        <!-- costam -->
         
         
         
@@ -434,30 +445,36 @@
         <!-- MODALS -->
         
         <!-- modal youtube embed south park trailer -->
-        <div class="modal fade" id="southparktrailer" tabindex="-1" role="dialog"> <!-- wrapper całego modala -->
+        <div class="modal fade" id="southparktrailermodal" tabindex="-1" role="dialog"> <!-- wrapper całego modala -->
           <div class="modal-dialog modal-fullwidth" role="document"> <!-- wrapper okna modala -->
             <div class="modal-content"> <!-- wrapper treści modala -->
               <div class="modal-body"> <!-- div z zawartością modala -->
                 <div class="embed-responsive embed-responsive-16by9">
-                  <!-- <iframe width="100%" height="auto" src="./assets/video/South-Park-The-Fractured-But-Whole-Official-Launch-Trailer--Ubisoft-[NA].mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                  <video id="southparktrailer" controls>
+                    <source src="./assets/video/South-Park-The-Fractured-But-Whole-Official-Launch-Trailer--Ubisoft-[NA].mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
                 </div>
               </div> <!-- END div z zawartością modala -->
-              
             </div> <!-- END wrapper treści modala -->
-          </div>
+          </div> <!-- wrapper okna modala -->
         </div> <!-- END wrapper całego modala -->
+
         <!-- modal youtube embed south park gameplay -->
-        <div class="modal fade" id="southparkgameplay" tabindex="-1" role="dialog"> <!-- wrapper całego modala -->
+        <div class="modal fade" id="southparkgameplaymodal" tabindex="-1" role="dialog"> <!-- wrapper całego modala -->
           <div class="modal-dialog modal-fullwidth" role="document"> <!-- wrapper okna modala -->
             <div class="modal-content"> <!-- wrapper treści modala -->
               <div class="modal-body"> <!-- div z zawartością modala -->
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe width="100%" height="auto" src="./assets/video/15-Minutes-of-South-Park-Fractured-But-Whole-Gameplay---Gamescom-2016.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <video id="southparkgameplay" controls>
+                    <source src="./assets/video/15-Minutes-of-South-Park-Fractured-But-Whole-Gameplay---Gamescom-2016.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
                 </div>
+                <p>ds</p>
               </div> <!-- END div z zawartością modala -->
-              
             </div> <!-- END wrapper treści modala -->
-          </div>
+          </div> <!-- wrapper okna modala -->
         </div> <!-- END wrapper całego modala -->
         
         <!-- build:js assets/scripts/App.js -->
