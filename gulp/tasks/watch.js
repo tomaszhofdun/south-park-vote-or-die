@@ -5,7 +5,7 @@ var gulp = require("gulp"),
 // watch
 gulp.task("watch", function () {
   browserSync.init({
-    notify: true,
+    notify: false,
     server: {
       baseDir: "app"
     },
@@ -13,6 +13,7 @@ gulp.task("watch", function () {
   });
 
   watch("app/index.html", function () {
+    gulp.start("modernizr");
     browserSync.reload();
   });
   watch(["app/assets/styles/**/*.css", "app/assets/styles/**/*.scss"], function () {

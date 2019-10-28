@@ -1,9 +1,16 @@
 
 .navbar-nav {
+    .scrollToTopIcon {
+        opacity: 0;
+        &-visible {
+            opacity: 1;
+        }
+    }
     .nav-item-bottom {
     background-color: $primary;
-    transition: .5s;
+    transition: background-color .5s, opacity .5s ;
     border-right: solid 1px white;
+    
     &:last-child {
         border-right: none;
     }

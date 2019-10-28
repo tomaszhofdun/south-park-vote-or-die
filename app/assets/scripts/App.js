@@ -2,7 +2,7 @@
 //import import Lightbox from "lightbox2"; lub require("lightbox2"); ale to nie jest es6 tylko funkcja node i webpack ją rozpoznaje
 import "popper.js";
 import "bootstrap";
-import "../../temp/scripts/modernizr";
+import "../../assets/scripts/modules/modernizr";
 import "lazysizes";
 // import "picturefill";
 // require("./modules/_modals");
@@ -14,22 +14,14 @@ var toolTips = new ToolTips;
 import Modals from "./modules/_modals";
 var modals = new Modals;
 
-import Test from "./modules/_test";
-var test = new Test;
+import TurnBootrapJsOn from "./modules/_turnBootrapJsOn";
+var turnBootrapJsOn = new TurnBootrapJsOn;
 
-// import Test2 from "./modules/_test2";
-// var test2 = new Test2;
+import MakeVisibleScrollToTopIcon from "./modules/_makeVisibleScrollToTopIcon";
+var makeVisibleScrollToTopIcon = new MakeVisibleScrollToTopIcon;
 
-import ScrolltoTop from "./modules/_scrolltoTop";
+import ScrolltoTop from "./modules/_scrolltoTop"
 var scrolltoTop = new ScrolltoTop;
 
-// require("./modules/_toolTips")
-// var re = new df();
-// import GallerySlider from "./modules/_gallerySlider";
-// var gallerySlider = new GallerySlider();
-
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-//   })
-
-// $("p").hide();
+import Test2 from "./modules/_test2";
+var test2 = new Test2;

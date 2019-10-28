@@ -3,22 +3,20 @@ import smoothscroll from "jquery-smooth-scroll";
 
 class ScrolltoTop {
     constructor() {
-        this.scrollToTopIcon = $(".scrollToTopIcon");
-        // this.addSmoothScrolling();
+        this.scrollToTop = $(".scrollToTop");
         this.events();
+        // console.log(this.scrollToTop);
+
     }
     events() {
-        // this.scrollToTopIcon.on("click", this.scrollToTop())
+        // console.log(this.scrollToTop);
+
         document.addEventListener("DOMContentLoaded", this.addSmoothScrolling());
     }
+    
     addSmoothScrolling() {
-        this.scrollToTopIcon.smoothScroll({
-            offset: 0,
-            easing: 'swing',
-            speed: "auto",
-            preventDefault: true
-           
-          })
+        // console.log(this.scrollToTop);
+        this.scrollToTop.smoothScroll();
     }
 }
 

@@ -2,7 +2,7 @@
 /* bootstrap scss needs to be import after custom variables so we can 
 overide !default bootstrap variables with flag !default  */
 
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "base/_mixins.scss";
 @import "base/_global.scss";
 @import "modules/_custom.scss";

@@ -1,17 +1,14 @@
 import $ from "jquery";
 import smoothscroll from "jquery-smooth-scroll";
 
-// przycisk do cofania strony na samą górę
+
 class Test2 {
   constructor() {
-    this.scrollToTopIcon = $(".scrollToTopIcon");
-    this.addSmoothScrolling();
+    this.events();
   }
 
-  addSmoothScrolling() {
-    this.scrollToTopIcon.smoothScroll({
-      speed: 1000
-    });
+  events() {
+    console.log("plik _test2.js");
   }
 }
 

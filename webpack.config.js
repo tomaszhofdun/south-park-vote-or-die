@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "app/temp/scripts"),
     filename: "[name].js"
   },
+  devtool: "source-map",
   module: {
     rules: [
       {

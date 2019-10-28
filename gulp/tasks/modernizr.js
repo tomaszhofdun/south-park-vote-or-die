@@ -9,5 +9,5 @@ gulp.task("modernizr", function() {
         options: ["setClasses"]
       })
     )
-    .pipe(gulp.dest("./app/temp/scripts"));
+    .pipe(gulp.dest("./app/assets/scripts/modules/"));
 });
