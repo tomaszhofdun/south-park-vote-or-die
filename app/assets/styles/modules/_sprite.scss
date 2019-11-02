@@ -2,40 +2,48 @@
 /* Instead edit "gulp/templates/sprite.css" */
 
 .icon {
-    background-image: url("../../assets/images/icons/svg-compiled/sprite-7598c0d5.svg"); 
+    background-image: url("../../assets/images/icons/svg-compiled/sprite-08f1996c.svg"); 
 }
 .no-svg .icon {
-    background-image: url("../../assets/images/icons/svg-compiled/sprite-7598c0d5.png"); 
+    background-image: url("../../assets/images/icons/svg-compiled/sprite-08f1996c.png"); 
 }
 
 .icon--svg--angle-double-up-solid
     {
-    width: 17px;
+    width: 27px;
     height: 26px;
-    background-position: 0 0;
+    background-position: 100% 0;
     display: inline-block;
 }
 
 .icon--svg--chart-pie-solid
     {
-    width: 17px;
-    height: 16px;
-    background-position: 50% 0;
+    width: 28px;
+    height: 26px;
+    background-position: 0 0;
     display: inline-block;
 }
 
 .icon--svg--envelope-open-solid
     {
-    width: 17px;
-    height: 17px;
-    background-position: 100% 0;
+    width: 28px;
+    height: 26px;
+    background-position: 50.90909090909091% 0;
     display: inline-block;
 }
 
 .icon--svg--envelope-solid
     {
-    width: 17px;
-    height: 17px;
+    width: 28px;
+    height: 26px;
     background-position: 0 100%;
+    display: inline-block;
+}
+
+.icon--svg--star-solid
+    {
+    width: 28px;
+    height: 26px;
+    background-position: 50.90909090909091% 100%;
     display: inline-block;
 }

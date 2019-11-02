@@ -7,16 +7,18 @@
         }
     }
     .nav-item-bottom {
-    background-color: $primary;
-    transition: background-color .5s, opacity .5s ;
-    border-right: solid 1px white;
-    
-    &:last-child {
-        border-right: none;
-    }
-    &:hover {
-        background-color: darken($primary, 10%);
-    }
+        background-color: $primary;
+        transition: background-color .5s, opacity .5s ;
+        border-right: solid 1px white;
 
-    }
+        &:last-child {
+            border-right: none;
+        }
+      
+        &:hover {
+            background-color: darken($primary, 10%);
+        }
+    
+        }
+    
 }

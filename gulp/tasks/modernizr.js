@@ -3,11 +3,11 @@ var gulp = require("gulp"),
 
 gulp.task("modernizr", function() {
   return gulp
-    .src(["./app/assets/styles/**/*.css", "./app/assets/scripts/**/*.js"])
+    .src(["./app/assets/styles/**/*.scss", "./app/assets/scripts/**/*.js"])
     .pipe(
       modernizr({
         options: ["setClasses"]
       })
     )
-    .pipe(gulp.dest("./app/assets/scripts/modules/"));
+    .pipe(gulp.dest("./app/temp/scripts"));
 });

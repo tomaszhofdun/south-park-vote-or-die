@@ -1,11 +1,5 @@
 //importujemy wszystkie nasze moduły z "modules/"
 //import import Lightbox from "lightbox2"; lub require("lightbox2"); ale to nie jest es6 tylko funkcja node i webpack ją rozpoznaje
-import "popper.js";
-import "bootstrap";
-import "../../assets/scripts/modules/modernizr";
-import "lazysizes";
-// import "picturefill";
-// require("./modules/_modals");
 
 
 import ToolTips from "./modules/_toolTips";

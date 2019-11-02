@@ -1,9 +1,21 @@
 .parallax {
-    background-image: url("../../assets/images/south-park-sunshine.png");
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+        &.lazyloaded {
+        background-image: url("../../assets/images/south-park-sunshine.jpg");
+        }
+        @include toSmall {
+            &.lazyloaded {
+                background-image: url("../../assets/images/south-park-sunshine-360.jpg");
+                height: 358px;
+                background-size: contain;
+            }
+        }
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+    
+    
+    
 }

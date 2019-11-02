@@ -76,5 +76,6 @@ gulp.task("build", [
   "deleteDocsFolder",
   "copyOtherFiles",
   "optimizeImages",
-  "usemin"
+  "usemin",
+  "modernizr"
 ]);

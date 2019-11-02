@@ -13,9 +13,11 @@
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css" type="text/css" />
   <!-- endbuild -->
+  
   <!-- build:js assets/scripts/Vendor.js -->
-  <!-- <script src="./temp/scripts/Vendor.js"></script> -->
+  <script src="./temp/scripts/Vendor.js" defer></script>
   <!-- endbuild -->
+   
   
 </head>
 <body>
@@ -71,7 +73,17 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/images/south-park-1380x562.jpg" class="d-block w-100" alt="south fractured but whole">
+            <picture>
+              <source class="d-block w-100" media="(min-width:1140px)" data-srcset="assets/images/south-park-1380i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+
+              <source class="d-block w-100" media="(min-width:960px)" data-srcset="assets/images/south-park-1380i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+              
+              <source class="d-block w-100" media="(min-width:720px)" data-srcset="assets/images/south-park-960i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+
+              <source class="d-block w-100" media="(min-width:540px)" data-srcset="assets/images/south-park-720i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+
+              <img class="d-block w-100 lazyload" data-src="assets/images/south-park-540i.jpg" alt="" />
+            </picture>
             <div class="carousel-caption d-none d-md-block">
               <h1 class="display-4 text-mainOrange text-uppercase font-weight-bolder mb-3">NEW GAME - NEW QUALITY™</h1>
               <h3 class="text-mainOrange mb-4">Huge fan of South Park ? Must see !!!</h3>
@@ -80,18 +92,42 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://place-hold.it/1380x562" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+              <picture>
+                <source class="d-block w-100" media="(min-width:1140px)" data-srcset="assets/images/south-park-1380i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+  
+                <source class="d-block w-100" media="(min-width:960px)" data-srcset="assets/images/south-park-1380i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+                
+                <source class="d-block w-100" media="(min-width:720px)" data-srcset="assets/images/south-park-960i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+  
+                <source class="d-block w-100" media="(min-width:540px)" data-srcset="assets/images/south-park-720i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+  
+                <img class="d-block w-100 lazyload" data-src="assets/images/south-park-540i.jpg" alt="" />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-4 text-mainOrange text-uppercase font-weight-bolder mb-3">NEW GAME - NEW QUALITY™</h1>
+                <h3 class="text-mainOrange mb-4">Huge fan of South Park ? Must see !!!</h3>
+                <button type="button" class="btn btn-lg btn-warning mr-1 shadow" data-toggle="modal" data-target="#southparkgameplaymodal">Watch First Gameplay</button>
+                <button type="button" class="btn btn-lg btn-success ml-1 shadow" data-toggle="modal" data-target="#southparktrailermodal">Watch Trailer</button>
+              </div>
           </div>
           <div class="carousel-item">
-            <img src="https://place-hold.it/1380x562" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
+              <picture>
+                <source class="d-block w-100" media="(min-width:1140px)" data-srcset="assets/images/south-park-1380i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+  
+                <source class="d-block w-100" media="(min-width:960px)" data-srcset="assets/images/south-park-1380i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+                
+                <source class="d-block w-100" media="(min-width:720px)" data-srcset="assets/images/south-park-960i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+  
+                <source class="d-block w-100" media="(min-width:540px)" data-srcset="assets/images/south-park-720i.jpg 1380w, assets/images/south-park-1380i.jpg 1380w" />
+  
+                <img class="d-block w-100 lazyload" data-src="assets/images/south-park-540i.jpg" alt="" />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-4 text-mainOrange text-uppercase font-weight-bolder mb-3">NEW GAME - NEW QUALITY™</h1>
+                <h3 class="text-mainOrange mb-4">Huge fan of South Park ? Must see !!!</h3>
+                <button type="button" class="btn btn-lg btn-warning mr-1 shadow" data-toggle="modal" data-target="#southparkgameplaymodal">Watch First Gameplay</button>
+                <button type="button" class="btn btn-lg btn-success ml-1 shadow" data-toggle="modal" data-target="#southparktrailermodal">Watch Trailer</button>
+              </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselOnMainPage" role="button" data-slide="prev">
@@ -117,7 +153,7 @@
     </hgroup>
     <!-- parralax -->
     <section id="parralax">
-      <div class="container-fluid parallax"></div>
+      <div class="container-fluid parallax lazyload"></div>
     </section>
     <!-- jumbotron -->
     <section id="jumbotron">
@@ -167,7 +203,6 @@
                     Towellie Best#1
                   </p>
                   <div class="embed-responsive embed-responsive-4by3">
-                    <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i9AT3jjAP0Y"  allowfullscreen></iframe> -->
                     <video class="embed-responsive-item" width="100%" height="100%" controls>
                       <source src="./assets/video/1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -197,13 +232,10 @@
                           </div>
                         </div>
                         <div class="col-xl-2">
-                          <img class="" src="assets/images/p-diddy.png" width="30px">
+                          <img class="lazyload" data-src="assets/images/p-diddy.png" width="30px">
                         </div>
                         <div class="col-xl-4">
-                          <button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" href="#" class=" btn btn-danger" data-toggle="popover"  data-content="You can't just die">Die</button>
-                          <!-- <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                              Popover on top
-                            </button> -->
+                          <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="top" href="#" data-toggle="popover"  data-content="You can't just die">Die</button>
                         </div>
                         
                       </div>
@@ -246,10 +278,10 @@
                             </div>
                           </div>
                           <div class="col-xl-2">
-                            <img class="" src="assets/images/p-diddy.png" width="30px">
+                            <img class="lazyload" data-src="assets/images/p-diddy.png" width="30px">
                           </div>
                           <div class="col-xl-4">
-                            <button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" href="#" class=" btn btn-danger" data-toggle="popover"  data-content="You can't just die">Die</button>
+                            <button type="button" class=" btn btn-danger" data-toggle="popover" data-placement="top" href="#"  data-toggle="popover"  data-content="You can't just die">Die</button>
                           </div>
                           
                         </div>
@@ -262,58 +294,11 @@
           </div>
         </div>
       </section>
-      <!-- face of south park -->
-      <!-- <section class="face-of-south-park">
-        <h1 class="display-3 text-center text-primary font-weight-light pt-5">Najwyżej oceniani bohaterzy</h1>
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-md-4 text-center">
-              <h3 class="h1 text-gold">Our winner !</h3>
-              <h4 class="h4 font-weight-light">Eric Cartman</h4>
-              <img src="./assets/images/eric-cartman-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
-              <p class="p-2">We dont't need to introduce this guy to anyone. Lets us present the meanest, the most rasist and fatest kid in south park. I hope he's not gonna read this as probably i would be dead.</p>
-              
-            </div>
-            <div class="col-md-4 text-center">
-              <h3 class="h1 text-primary font-weight-light">The second one</h3>
-              <h4 class="h4 font-weight-light">Towellie</h4>
-              <img src="./assets/images/towellie-flip-card-front.jpg" alt="Towellie thumbnail" class="img-thumbnail">
-              <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga aperiam alias iusto quae praesentium.</p>
-            </div>
-            <div class="col-md-4 text-center"> -->
-              
-              
-              
-              
-              <!-- <h3 class="h1 text-gold">The third place !</h3>
-                <h4 class="h4 font-weight-light">Randy Marsh</h4>
-                <img src="./assets/images/" alt="Randy Marsh thumbnail" class="img-thumbnail">
-                <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ut adipisci exercitationem architecto quae atque non, aliquam distinctio vitae earum.</p> -->
-                <!-- <div class="flip-card mb-5">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <h3 class="h1 p-3 font-weight-light">The third place !</h3>
-                      <h4 class="h4 font-weight-light">Randy Marsh</h4>
-                      <img src="./assets/images/randy-marsh-flip-card-front.jpg" class="img-thumbnail"/>
-                      <p class="p-4">He's a guy you would, definitely wanna hang out. He drinks a lot, he's' stupid as hell, he has even more stupid ideas. </p>
-                    </div>
-                    <div class="flip-card-back">
-                      <h3 class="h1 p-3 font-weight-light">The third place !</h3>
-                      <h4 class="h4 font-weight-light">Randy Marsh</h4>
-                      <img src="./assets/images/randy-marsh-flip-card-back.jpg" class="img-thumbnail"/>
-                      <p class="p-4">That's the other side of randy's card. Here you can text something funny as ass</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
         
         <!-- temp-card -->
         <div class="container-fluid bg-gold text-light text-center pt-4 pb-5">
           <header>
-            <h1 class="display-4 pt-5">3D Shading with Box-Shadows <span>A shading effect for 3D transformed elements</span></h1>  
+            <h1 class="display-4 pt-5">and... the winner is....</h1>  
           </header>
           
           <div class="row ">
@@ -323,14 +308,21 @@
                 <div class="card-inner" onclick="return true">
                   <div class="first-side bg-dodgerblue pt-2">
                     <h3 class="h1 text-gold">Our winner !</h3>
+                    <span class="icon icon--svg--star-solid align-middle"></span>
+                    <p>4.8</p>
                     <h4 class="h4 font-weight-light">Eric Cartman</h4>
-                    <img src="./assets/images/eric-cartman-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
+                    
+                    <picture>
+                        <img data-src="./assets/images/eric-cartman-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail lazyload">
+                    </picture>
                     <p class="p-2">We dont't need to introduce this guy to anyone. Lets us present the meanest, the most rasist and fatest kid in south park. I hope he's not gonna read this as probably i would be dead.</p>
                   </div>
                   <div class="second-side bg-dodgerblue pt-2">
                     <h3 class="h1 text-gold">Our winner !</h3>
+                    <span class="icon icon--svg--star-solid align-middle"></span>
+                    <p>4.8</p>
                     <h4 class="h4 font-weight-light">Eric Cartman</h4>
-                    <img src="./assets/images/eric-cartman-flip-card-back.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
+                    <img data-src="./assets/images/eric-cartman-flip-card-back.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail lazyload">
                     <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam harum deleniti eum architecto accusantium quos sapiente, quae nobis suscipit.</p>
                   </div>
                 </div>
@@ -341,15 +333,19 @@
                 
                 <div class="card-inner" onclick="return true">
                   <div class="first-side bg-main-blue-gradiant pt-2">
-                    <h3 class="h1 text-gold">Our winner !</h3>
-                    <h4 class="h4 font-weight-light">Eric Cartman</h4>
-                    <img src="./assets/images/towellie-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
+                    <h3 class="h1 text-gold">Second place</h3>
+                    <span class="icon icon--svg--star-solid align-middle"></span>
+                    <p>4.7</p>
+                    <h4 class="h4 font-weight-light">Towellie</h4>
+                    <img data-src="./assets/images/towellie-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail lazyload">
                     <p class="p-2">We dont't need to introduce this guy to anyone. Lets us present the meanest, the most rasist and fatest kid in south park. I hope he's not gonna read this as probably i would be dead.</p>
                   </div>
                   <div class="second-side bg-main-blue-gradiant pt-2">
-                    <h3 class="h1 text-gold">Our winner !</h3>
-                    <h4 class="h4 font-weight-light">Eric Cartman</h4>
-                    <img src="./assets/images/towellie-flip-card-back.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
+                    <h3 class="h1 text-gold">Second place</h3>
+                    <span class="icon icon--svg--star-solid align-middle"></span>
+                    <p>4.7</p>
+                    <h4 class="h4 font-weight-light">Towellie</h4>
+                    <img data-src="./assets/images/towellie-flip-card-back.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail lazyload">
                     <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam harum deleniti eum architecto accusantium quos sapiente, quae nobis suscipit.</p>
                   </div>
                 </div>
@@ -360,15 +356,19 @@
                 
                 <div class="card-inner" onclick="return true">
                   <div class="first-side bg-success pt-2">
-                    <h3 class="h1 text-gold">Our winner !</h3>
-                    <h4 class="h4 font-weight-light">Eric Cartman</h4>
-                    <img src="./assets/images/randy-marsh-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
+                    <h3 class="h1 text-gold">The third one</h3>
+                    <span class="icon icon--svg--star-solid align-middle"></span>
+                    <p>4.4</p>
+                    <h4 class="h4 font-weight-light">Randy Marsh</h4>
+                    <img data-src="./assets/images/randy-marsh-flip-card-front.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail lazyload">
                     <p class="p-2">We dont't need to introduce this guy to anyone. Lets us present the meanest, the most rasist and fatest kid in south park. I hope he's not gonna read this as probably i would be dead.</p>
                   </div>
                   <div class="second-side bg-success pt-2">
-                    <h3 class="h1 text-gold">Our winner !</h3>
-                    <h4 class="h4 font-weight-light">Eric Cartman</h4>
-                    <img src="./assets/images/randy-marsh-flip-card-back.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail">
+                    <h3 class="h1 text-gold">The third one</h3>
+                    <span class="icon icon--svg--star-solid align-middle"></span>
+                    <p>4.4</p>
+                    <h4 class="h4 font-weight-light">Randy Marsh</h4>
+                    <img data-src="./assets/images/randy-marsh-flip-card-back.jpg" alt="Eric Cartman thumbnail" class="img-thumbnail lazyload">
                     <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam harum deleniti eum architecto accusantium quos sapiente, quae nobis suscipit.</p>
                   </div>
                 </div>
@@ -387,19 +387,29 @@
         
         
         <!-- sticky-bottom -->
-        <nav class=" navbar py-0 navbar-expand navbar-light sticky-bottom ">
-          <ul class="navbar-nav ml-auto mt-0">
-            <li class="nav-item nav-item-bottom px-sm-5 px-3 active">
-              <a class="nav-link" href="#"><span class="icon icon--svg--envelope-solid align-middle"></span></a>
-            </li>
-            <li class="nav-item nav-item-bottom px-sm-5 px-3">
-              <a class="nav-link" href="#"><span class="icon icon--svg--chart-pie-solid align-middle"></span></a>
-            </li>
-            <li class="nav-item nav-item-bottom scrollToTopIcon px-sm-5 px-3">
-              <a class="nav-link scrollToTop" href="#navbar-top"><span class="icon icon--svg--angle-double-up-solid align-middle"></span></a>
-            </li>
-          </ul>
-        </nav>
+       
+        <nav class="navbar py-0 navbar-expand navbar-light sticky-bottom ">
+            <ul class="navbar-nav ml-auto mt-0">
+              <a class="nav-item nav-item-bottom">
+                <li class="nav-link px-sm-5 px-3">
+                 <span class="icon icon--svg--envelope-solid align-middle"></span>
+                </li>
+              </a>
+              <a class="nav-item nav-item-bottom">
+                <li class="nav-link px-sm-5 px-3">
+                  <span class="icon icon--svg--chart-pie-solid align-middle"></span>
+                </li>
+              </a>
+              <a class="nav-item nav-item-bottom scrollToTop scrollToTopIcon" href="#navbar-top">
+                <li class="nav-link px-sm-5 px-3">
+                  <span class="icon icon--svg--angle-double-up-solid align-middle"></span>
+                </li>
+              </a>
+                
+            </ul>
+          </nav>
+
+       
         <!-- footer -->
         <section class="footer">
           <div class="container-fluid bg-secondary pt-4">
@@ -485,7 +495,7 @@
         </div> <!-- END wrapper całego modala -->
         
         <!-- build:js assets/scripts/App.js -->
-        <script src="./temp/scripts/App.js"></script>
+        <script src="./temp/scripts/App.js" defer></script>
         <!-- endbuild -->
         
       </body>
