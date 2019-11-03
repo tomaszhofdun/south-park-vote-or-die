@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tinify": "tinify-compress --s ./app/assets/images/not_used --d ./docs/assets/images/temp --key R8y9qFT9RxQLcsV25PS0jfzpQqcCcsH8"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
     "lazysizes": "^4.0.1",
     "normalize.css": "^7.0.0",
     "picturefill": "^3.0.2",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
+    "tinify": "^1.6.0-beta.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -43,6 +45,7 @@
     "gulp-sourcemaps": "^2.1.1",
     "gulp-svg-sprite": "^1.3.7",
     "gulp-svg2png": "^2.0.2",
+    "gulp-tinypng-compress": "^1.2.5",
     "gulp-uglify": "^3.0.0",
     "gulp-usemin": "^0.3.28",
     "gulp-watch": "^4.3.11",

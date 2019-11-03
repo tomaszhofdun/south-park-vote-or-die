@@ -1,10 +1,68 @@
 var gulp = require("gulp"),
-  imagemin = require("gulp-imagemin"),
+  // imagemin = require("gulp-imagemin"),
   del = require("del"),
   usemin = require("gulp-usemin"),
   rev = require("gulp-rev"),
   cssnano = require("gulp-cssnano"),
-  uglify = require("gulp-uglify");
+  uglify = require("gulp-uglify"),
+  // tinify = require("tinify");
+  tinypng = require('gulp-tinypng-compress');
+  
+
+// gulp.task("tinify", function() {
+//   tinify.key = "R8y9qFT9RxQLcsV25PS0jfzpQqcCcsH8";
+
+//   tinify.fromFile("./app/assets/images").toFile("./app/temp", function(err) {
+//     let compressionsThisMonth = (500 - tinify.compressionCount);
+//     console.log("Zostało mi jeszcze " + compressionsThisMonth);
+//     if (err instanceof tinify.AccountError) {
+//       console.log("The error message is: " + err.message);
+//       // Verify your API key and account limit.
+//     } else if (err instanceof tinify.ClientError) {
+//       // Check your source image and request options.
+//     } else if (err instanceof tinify.ServerError) {
+//       // Temporary issue with the Tinify API.
+//     } else if (err instanceof tinify.ConnectionError) {
+//       // A network connection error occurred.
+//     } else {
+//       // Something else went wrong, unrelated to the Tinify API.
+//     }
+//   });
+// })
+
+gulp.task('tinypng', ["deleteDocsFolder", "icons"], function () {
+  gulp.src([
+    "./app/assets/images/**/*",
+    "!./app/assets/images/icons/svg",
+    "!./app/assets/images/icons/svg/**/*"
+  ])
+      .pipe(tinypng({
+          key: 'R8y9qFT9RxQLcsV25PS0jfzpQqcCcsH8',
+          sigFile: 'images/.tinypng-sigs',
+          log: true
+      }))
+      .pipe(gulp.dest('./docs/assets/images'));
+});
+
+
+// gulp.task("optimizeImages", ["deleteDocsFolder", "icons"], function() {
+//   return gulp
+//     .src([
+//       "./app/assets/images/**/*",
+//       "!./app/assets/images/icons/svg",
+//       "!./app/assets/images/icons/svg/**/*"
+//     ])
+//     .pipe(
+//       imagemin({
+//         progressive: true,
+//         interlaced: true,
+//         multipass: true
+//       })
+//     )
+//     .pipe(gulp.dest("./docs/assets/images"));
+// });
+
+
 
 gulp.task("deleteDocsFolder", function() {
   return del("./docs");
@@ -23,22 +81,7 @@ gulp.task("copyOtherFiles", ["deleteDocsFolder"], function() {
   return gulp.src(pathToCopy).pipe(gulp.dest("./docs"));
 });
 
-gulp.task("optimizeImages", ["deleteDocsFolder", "icons"], function() {
-  return gulp
-    .src([
-      "./app/assets/images/**/*",
-      "!./app/assets/images/icons/svg",
-      "!./app/assets/images/icons/svg/**/*"
-    ])
-    .pipe(
-      imagemin({
-        progressive: true,
-        interlaced: true,
-        multipass: true
-      })
-    )
-    .pipe(gulp.dest("./docs/assets/images"));
-});
+
 
 // usemin zmienia odnośnik do css i js w index.html a w połączeniu z:
 // gulp-rev: dodaje losowy ciąg znaków na końcu
@@ -75,7 +118,7 @@ gulp.task("usemin", ["deleteDocsFolder", "css", "scripts"], function() {
 gulp.task("build", [
   "deleteDocsFolder",
   "copyOtherFiles",
-  "optimizeImages",
+  "tinypng",
   "usemin",
   "modernizr"
 ]);
