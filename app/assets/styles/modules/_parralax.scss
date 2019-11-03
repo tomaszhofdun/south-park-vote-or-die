@@ -2,7 +2,7 @@
         &.lazyloaded {
         background-image: url("../../assets/images/south-park-sunshine.jpg");
         }
-        @include toSmall {
+        @include toMedium {
             &.lazyloaded {
                 background-image: url("../../assets/images/south-park-sunshine-360.jpg");
                 height: 358px;
