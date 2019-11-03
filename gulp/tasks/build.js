@@ -1,5 +1,5 @@
 var gulp = require("gulp"),
-  // imagemin = require("gulp-imagemin"),
+  imagemin = require("gulp-imagemin"),
   del = require("del"),
   usemin = require("gulp-usemin"),
   rev = require("gulp-rev"),
@@ -31,36 +31,48 @@ var gulp = require("gulp"),
 // })
 
 gulp.task('tinypng', ["deleteDocsFolder", "icons"], function () {
-  gulp.src([
+  return gulp.src([
     "./app/assets/images/**/*",
-    "!./app/assets/images/icons/svg",
-    "!./app/assets/images/icons/svg/**/*"
+    "!./app/assets/images/uncompressed",
+    "!./app/assets/images/uncompressed/**/*",
+    "!./app/assets/images/not_used",
+    "!./app/assets/images/not_used/**/*",
+    "!./app/assets/images/gif",
+    "!./app/assets/images/gif/**/*",
+    "!./app/assets/images/icons",
+    "!./app/assets/images/icons/**/*",
+
   ])
       .pipe(tinypng({
           key: 'R8y9qFT9RxQLcsV25PS0jfzpQqcCcsH8',
           sigFile: 'images/.tinypng-sigs',
-          log: true
+          log: true,
+          summarize: true
       }))
       .pipe(gulp.dest('./docs/assets/images'));
 });
 
 
-// gulp.task("optimizeImages", ["deleteDocsFolder", "icons"], function() {
-//   return gulp
-//     .src([
-//       "./app/assets/images/**/*",
-//       "!./app/assets/images/icons/svg",
-//       "!./app/assets/images/icons/svg/**/*"
-//     ])
-//     .pipe(
-//       imagemin({
-//         progressive: true,
-//         interlaced: true,
-//         multipass: true
-//       })
-//     )
-//     .pipe(gulp.dest("./docs/assets/images"));
-// });
+gulp.task("optimizeImages", ["tinypng","icons"], function() {
+  return gulp
+    .src([
+      "./app/assets/images/**/*",
+      "!./app/assets/images/*",
+      "!./app/assets/images/uncompressed",
+      "!./app/assets/images/uncompressed/**/*",
+      "!./app/assets/images/not_used",
+      "!./app/assets/images/not_used/**/*"
+    ])
+    .pipe(
+      imagemin({
+        progressive: true,
+        interlaced: true,
+        multipass: true
+      })
+    )
+    .pipe(gulp.dest("./docs/assets/images"));
+});
+
 
 
 
@@ -118,7 +130,7 @@ gulp.task("usemin", ["deleteDocsFolder", "css", "scripts"], function() {
 gulp.task("build", [
   "deleteDocsFolder",
   "copyOtherFiles",
-  "tinypng",
+  "optimizeImages",
   "usemin",
   "modernizr"
 ]);
