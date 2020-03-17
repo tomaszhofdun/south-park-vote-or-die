@@ -3,9 +3,9 @@ import $ from "jquery";
 class Modals {
   constructor() {
     this.southparkgameplaymodal = $("#southparkgameplaymodal");
-    this.southparkgameplay = document.getElementById("southparkgameplay"); //musi być vanilla js bo nie zadziała play na "video" tagu
+    this.southparkgameplay = document.getElementById("southparkgameplay");
     this.southparktrailermodal = $("#southparktrailermodal");
-    this.southparktrailer = document.getElementById("southparktrailer"); //musi być vanilla js bo nie zadziała play na "video" tagu
+    this.southparktrailer = document.getElementById("southparktrailer");
     this.events();
   }
   events() {

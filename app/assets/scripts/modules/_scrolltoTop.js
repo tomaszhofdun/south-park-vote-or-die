@@ -5,17 +5,12 @@ class ScrolltoTop {
     constructor() {
         this.scrollToTop = $(".scrollToTop");
         this.events();
-        // console.log(this.scrollToTop);
 
     }
-    events() {
-        // console.log(this.scrollToTop);
-
-        document.addEventListener("DOMContentLoaded", this.addSmoothScrolling());
+    events() {document.addEventListener("DOMContentLoaded", this.addSmoothScrolling());
     }
     
     addSmoothScrolling() {
-        // console.log(this.scrollToTop);
         this.scrollToTop.smoothScroll();
     }
 }
